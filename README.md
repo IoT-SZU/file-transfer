@@ -10,8 +10,12 @@
 
 启动服务器后，向 `http://ip地址/file/` 发送 POST 请求，携带 3 个参数: dirname、filename、data
 
-|URL|http://ip地址/file/|METHOD|POST|
+|URL|METHOD|
+|:--|:--|
+|http://ip地址/file/|POST|
+
 |参数|作用|
+|:--|:--|
 |dirname|存放的文件夹名字（注：这个参数非服务器上的绝对路径，只是在某个文件夹下创建一个新的文件夹，这个新的文件夹名为 dirname）|
 |filename|文件名（注：保存时并非以该文件名来保存，会在文件名后面加上数字来避免文件名重复）|
 |data|要保存的数据|
@@ -24,14 +28,13 @@
 
 进入项目根目录
 
-## 安装依赖
+### 安装依赖
 
 ```
 pip install -r requirements.txt
-# 
 ```
 
-## 启动
+### 启动
 
 ```
 python manage.py runserver 0.0.0.0:8080
